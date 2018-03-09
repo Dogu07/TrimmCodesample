@@ -6,89 +6,8 @@ html, body {
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-}
-
-.section > p:before {
-
-    content: 'Vraag : ';
-
-}
-.article > p:before {
-
-    content: 'Vraag : ';
-
-}
-
-.h2vragen:after {
-
-    content: '?';
-
-}
-.h2vragen::first-letter {
-    font-size: 200%;
-    color: #d3d3d3;
-}
-
-#Aside[target] {
-    background-color: #114B5F;
-}
-
-.header {
-    text-align: center;
-    font-size: 24px;
-    font-family: sans-serif ;
-    color: #fff;
-}
-.section {
-    color: #fff;
-}
-.article {
-    color: #fff;
-}
-.Aside {
-    margin-top: 15px;
-    border: 20px solid #333;
-    border-radius: 10%;
-    box-shadow: 0 3px #d3d3d3;
-    padding-top: 0.5em;
-    font-family: sans-serif;
-    width: 20%;
-    float: right;
-    color: #333;
-    text-align: center;
-    height: 100%;
-}
-.Aside a {
-    list-style: none;
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer {
-    position: absolute;
-    color: #fff;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #333;
-    text-align: center;
-}
-.footer a {
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-
-}
-.section {
-    margin: 15px;
-    padding: 15px;
-}
-.article {
-    margin: 15px;
-    padding: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 /*Navbar*/
@@ -117,3 +36,94 @@ li a:hover {
     background-color: #fff;
     color: #000;
 }
+
+.section > p:before {
+
+    content: 'Antwoord : ';
+
+}
+.article > p:before {
+
+    content: 'Antwoord : ';
+
+}
+.space {
+    height: 25px;
+}
+
+
+.h2vragen:after {
+
+    content: '?';
+
+}
+.h2vragen::first-letter {
+    font-size: 200%;
+    color: #d3d3d3;
+}
+
+#Aside[target] {
+    background-color: #114B5F;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif ;
+    color: #fff;
+}
+
+.section {
+    margin: 15px;
+    padding: 15px;
+    line-height: 1.6em;
+    color: #fff;
+}
+.section:first-child {
+    color: #fff;
+}
+.article {
+    margin: 15px;
+    padding: 15px;
+    color: #fff;
+    position: relative;
+}
+
+
+.Aside {
+    margin-top: 15px;
+    border: 20px solid #333;
+    border-radius: 10%;
+    box-shadow: 0 3px #d3d3d3;
+    padding-top: 0.5em;
+    font-family: sans-serif;
+    width: 20%;
+    float: right;
+    color: #333;
+    text-align: center;
+    height: 100%;
+}
+.Aside a {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    color: #fff;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #333;
+    text-align: center;
+}
+
+.footer a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+
+}
+

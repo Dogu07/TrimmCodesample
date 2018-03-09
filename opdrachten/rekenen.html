@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>var express = prompt("typ een som",""); 
+if(!express) alert("goedzo");
+
+express = express.replace(/\s/g, '');
+var number1 = +express.charAt(0);
+var sign = express.charAt(1);
+var number2 = +express.charAt(2);	
+
+switch(sign){
+case "+" : document.write(number1 + number2);  break;
+case "-" : document.write(number1 - number2);  break;
+case "*" : document.write(number1 * number2);  break;
+case "/" : document.write(number1 / number2);  break;
+ default : document.write("Not a correct operation");
+}
+
+
+
+</script>
+</body>
+</html>

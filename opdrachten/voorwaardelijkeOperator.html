@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Rekensom</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var text;
+    var vraag = prompt("Hoeveel is 20 + 60 ?");
+    switch(vraag) {
+        case "80":
+        text = "<h2> Prima, ga zo door! </h2>";
+        break;
+        default:
+        text = "<h2> Jammer, volgende keer beter !</h2>";
+    }
+   document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

@@ -219,7 +219,7 @@
 
 
 
-$link = mysqli_connect("localhost", "id4496847_ramidb", "rami123", "id4496847_rami");
+$link = mysqli_connect("localhost", "*****", "*****", "*****");
 if($link === false){die("ERROR: Could not connect. " . mysqli_connect_error());}
 $sql = 'INSERT INTO omwonende_klachten (`voornaam`, `achternaam`, `adres`, `postcode`, `email`, `typen` , `omschrijving`, `tevreden`)VALUES("'. $_POST['naam'] . '", "' . $_POST['achternaam'] . '", "' . $_POST['straat'] . '", "' . $_POST['postcode'] . '", "' . $_POST['email'] . '", "' . $_POST['typen'] . '", "' . $_POST['klacht'] . '",  "' . $_POST['tevreden'] . '" );';
 if(mysqli_query($link, $sql)){
